@@ -14,10 +14,6 @@ only:
 services:
     - docker
 
-install:
-  # Install all of the dependencies
-  - git submodule update --init
-
 script:
   - make
 
