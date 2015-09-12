@@ -1,6 +1,11 @@
 # Use the new Container based KVM stack which allows "sudo" access
 dist: trusty
 
+language: cpp
+
+compile:
+  - clang
+
 sudo: required
 
 only:
@@ -9,10 +14,10 @@ only:
 services:
     - docker
 
-
 install:
   # Install all of the dependencies
   - git submodule update --init
+  - apt-get install -y libc++
 
 script:
   - make
