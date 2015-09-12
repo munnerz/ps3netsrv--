@@ -3,8 +3,8 @@ dist: trusty
 
 language: cpp
 
-compile:
-  - clang
+compiler:
+  - gcc
 
 sudo: required
 
@@ -17,7 +17,6 @@ services:
 install:
   # Install all of the dependencies
   - git submodule update --init
-  - sudo apt-get install -y libc++
 
 script:
   - make
