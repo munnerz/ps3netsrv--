@@ -17,7 +17,7 @@ services:
 install:
   # Install all of the dependencies
   - git submodule update --init
-  - apt-get install -y libc++
+  - sudo apt-get install -y libc++
 
 script:
   - make
