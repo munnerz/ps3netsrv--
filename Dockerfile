@@ -1,4 +1,4 @@
-FROM debian
+FROM scratch
 
 ADD ps3netsrv++ /ps3netsrv++
 
